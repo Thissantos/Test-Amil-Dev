@@ -1,0 +1,461 @@
+/ *! v5.0.0 normalize.css | MIT Licença | github.com/necolas/normalize.css * /
+
+/ **
+ * 1. Alterar a família de fontes padrão em todos os navegadores (opinativo).
+ * 2. Corrija a altura da linha em todos os navegadores.
+ * 3. ajustes Impedir de tamanho da fonte após alterações de orientação em
+ * IE no Windows Phone e no iOS.
+ * /
+
+/ * Documento
+   ================================================== ======================== * /
+
+html {
+  font-family: sans-serif; / * 1 * /
+  line-height: 1,15; / * 2 * /
+  -ms-text-size-adjust: 100%; / * * 3 /
+  -webkit-text-size-adjust: 100%; / * * 3 /
+}
+
+/* Seções
+   ================================================== ======================== * /
+
+/ **
+ * Remover a margem em todos os navegadores (opinativo).
+ * /
+
+body {
+  margin: 0;
+}
+
+/ **
+ * Adicione a exibição correta no IE 9.
+ * /
+
+artigo,
+lado,
+rodapé,
+cabeçalho,
+nav,
+seção {
+  display: block;
+}
+
+/ **
+ * Corrija o tamanho da fonte e margem sobre `elementos h1` dentro` section` e
+ * `contextos article` no Chrome, Firefox e Safari.
+ * /
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/ * O conteúdo Agrupamento
+   ================================================== ======================== * /
+
+/ **
+ * Adicione a exibição correta no IE 9.
+ * 1. Adicione a exibição correta no IE.
+ * /
+
+figcaption,
+figura,
+principal {/ * 1 * /
+  display: block;
+}
+
+/ **
+ * Adicione a margem correta no IE 8.
+ * /
+
+a figura {
+  margin: 1em 40px;
+}
+
+/ **
+ * 1. Adicione o lado correto dimensionamento no Firefox.
+ * 2. Mostre o transbordamento em Edge e IE.
+ * /
+
+hr {
+  box-sizing: content-box; / * 1 * /
+  height: 0; / * 1 * /
+  overflow: visível; / * 2 * /
+}
+
+/ **
+ * 1. Corrija a herança e dimensionamento do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o `o dimensionamento da fonte em` estranho em todos os navegadores.
+ * /
+
+pré {
+  font-family: monospace, monospace; / * 1 * /
+  font-size: 1em; / * 2 * /
+}
+
+/ * Semântica em nível de texto
+   ================================================== ======================== * /
+
+/ **
+ * 1. Remova o fundo cinza em links ativos no IE 10.
+ * 2. Remova as lacunas nas ligações de sublinhar no iOS 8+ e Safari 8+.
+ * /
+
+uma {
+  background-color: transparent; / * 1 * /
+  -webkit-text-decoration-salto: objetos; / * 2 * /
+}
+
+/ **
+ * Remover o contorno em links focadas quando eles também estão ativos ou pairou
+ * Em todos os navegadores (opinativo).
+ * /
+
+a: active,
+a: hover {
+  delinear-width: 0;
+}
+
+/ **
+ * 1. Remova a borda inferior no Firefox 39-.
+ * 2. Adicione a decoração de texto correto no Chrome, Edge, IE, Opera e Safari.
+ * /
+
+abbr [título] {
+  border-bottom: none; / * 1 * /
+  text-decoration: underline; / * 2 * /
+  text-decoration: underline pontilhada; / * 2 * /
+}
+
+/ **
+ * Impedir a aplicação duplicado do `bolder` pela próxima regra no Safari 6.
+ * /
+
+b,
+Forte {
+  font-weight: herdar;
+}
+
+/ **
+ * Adicione o peso fonte correta no Chrome, Edge, e Safari.
+ * /
+
+b,
+Forte {
+  font-weight: mais ousado;
+}
+
+/ **
+ * 1. Corrija a herança e dimensionamento do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o `o dimensionamento da fonte em` estranho em todos os navegadores.
+ * /
+
+código,
+kbd,
+samp {
+  font-family: monospace, monospace; / * 1 * /
+  font-size: 1em; / * 2 * /
+}
+
+/ **
+ * Adicione o estilo da fonte correta no Android 4.3-.
+ * /
+
+dfn {
+  font-style: italic;
+}
+
+/ **
+ * Adicione o fundo e cor correta no IE 9.
+ * /
+
+mark {
+  background-color: # ff0;
+  color: # 000;
+}
+
+/ **
+ * Adicione o tamanho da fonte correta em todos os navegadores.
+ * /
+
+pequeno {
+  font-size: 80%;
+}
+
+/ **
+ * Impedir `sub` e` elementos sup` de afetar a altura da linha em
+ * Todos os navegadores.
+ * /
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/ * Conteúdo incorporado
+   ================================================== ======================== * /
+
+/ **
+ * Adicione a exibição correta no IE 9.
+ * /
+
+áudio,
+vídeo {
+  display: inline-block;
+}
+
+/ **
+ * Adicione a exibição correta no iOS 4-7.
+ * /
+
+áudio: não ([controles]) {
+  display: none;
+  height: 0;
+}
+
+/ **
+ * Remover a fronteira em imagens dentro links no IE 10.
+ * /
+
+img {
+  border-style: none;
+}
+
+/ **
+ * Esconder o transbordamento no IE.
+ * /
+
+SVG: não (: root) {
+  overflow: hidden;
+}
+
+/ * Forms
+   ================================================== ======================== * /
+
+/ **
+ * 1. Alterar os estilos de fonte em todos os navegadores (opinativo).
+ * 2. Remova a margem no Firefox e Safari.
+ * /
+
+botão,
+entrada,
+optgroup,
+selecionar,
+textarea {
+  font-family: sans-serif; / * 1 * /
+  font-size: 100%; / * 1 * /
+  line-height: 1,15; / * 1 * /
+  margin: 0; / * 2 * /
+}
+
+/ **
+ * Mostrar o transbordamento no IE.
+ * 1. Mostrar o transbordamento em Borda.
+ * /
+
+botão,
+input {/ * 1 * /
+  overflow: visível;
+}
+
+/ **
+ * Remover a herança de texto transformar em Edge, Firefox e IE.
+ * 1. Remova a herança de texto transformar no Firefox.
+ * /
+
+botão,
+selecionar {/ * 1 * /
+  text-transform: none;
+}
+
+/ **
+ * 1. Impedir que um bug WebKit onde (2) destrói `audio` nativa e` video`
+ * Controles no Android 4.
+ * 2. Corrigir a incapacidade de estilo tipos clicáveis ​​em iOS e Safari.
+ * /
+
+botão,
+html [type = "button"], / * 1 * /
+[Type = "reset"],
+[Type = "submit"] {
+  -webkit-aparência: botão; / * 2 * /
+}
+
+/ **
+ * Retire a borda interna e padding no Firefox.
+ * /
+
+botão :: - moz-focus-inner,
+[Type = "button"] :: - moz-focus-inner,
+[Type = "reset"] :: - moz-focus-inner,
+[Type = "submit"] :: - moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/ **
+ * Restaurar os estilos de foco desactivado pela regra anterior.
+ * /
+
+botão: -moz-focusring,
+[Type = "button"]: - focusring moz-,
+[Type = "reset"]: - moz-focusring,
+[Type = "submit"]: - moz-focusring {
+  esboço: 1px pontilhada ButtonText;
+}
+
+/ **
+ * Mude a fronteira, margem e preenchimento em todos os navegadores (opinativo).
+ * /
+
+fieldset {
+  border: 1px solid # c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/ **
+ * 1. Corrigir a disposição do texto no Edge e IE.
+ * 2. Corrija a herança da cor do `elementos fieldset` no IE.
+ * 3. Retire a cobertura para que os desenvolvedores não são apanhados quando zerar
+ * `Fieldset` elementos em todos os navegadores.
+ * /
+
+lenda {
+  box-sizing: Beira-box; / * 1 * /
+  color: herdar; / * 2 * /
+  display: table; / * 1 * /
+  max-width: 100%; / * 1 * /
+  padding: 0; / * * 3 /
+  white-space: normal; / * 1 * /
+}
+
+/ **
+ * 1. Adicione a exibição correta no IE 9.
+ * 2. Adicione o alinhamento vertical correta no Chrome, Firefox e Opera.
+ * /
+
+progresso {
+  display: inline-block; / * 1 * /
+  vertical-align: baseline; / * 2 * /
+}
+
+/ **
+ * Retire a barra de rolagem vertical padrão no IE.
+ * /
+
+textarea {
+  overflow: auto;
+}
+
+/ **
+ * 1. Adicione o lado correto dimensionamento no IE 10.
+ * 2. Remova o preenchimento no IE 10.
+ * /
+
+[Type = "checkbox"],
+[Type = "radio"] {
+  box-sizing: Beira-box; / * 1 * /
+  padding: 0; / * 2 * /
+}
+
+/ **
+ * Corrija o estilo de cursor de incremento e decremento botões no Chrome.
+ * /
+
+[Type = "número"] :: --interno-spin-botão webkit,
+[Type = "número"] :: - webkit-outer-spin-botão {
+  height: auto;
+}
+
+/ **
+ * 1. Corrija a aparência estranha no Chrome e Safari.
+ * 2. Corrija o estilo de destaque no Safari.
+ * /
+
+[Type = "search"] {
+  -webkit-aparência: campo de texto; / * 1 * /
+  delinear-offset: -2px; / * 2 * /
+}
+
+/ **
+ * Remover o preenchimento interior e botões no Chrome e Safari cancelar no MacOS.
+ * /
+
+[Type = "search"] :: - webkit-search-cancelar botões,
+[Type = "search"] :: - webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/ **
+ * 1. Corrigir a incapacidade de estilo tipos clicáveis ​​em iOS e Safari.
+ * 2. Alterar as propriedades do tipo de letra para `inherit` no Safari.
+ * /
+
+:: - Botão webkit-file-upload {
+  -webkit-aparência: botão; / * 1 * /
+  font: herdar; / * 2 * /
+}
+
+/* Interativo
+   ================================================== ======================== * /
+
+/ *
+ * Adicione a exibição correta no IE 9.
+ * 1. Adicione a exibição correta no Edge, IE e Firefox.
+ * /
+
+detalhes, / * * 1 /
+cardápio {
+  display: block;
+}
+
+/ *
+ * Adicione a exibição correta em todos os navegadores.
+ * /
+
+resumo {
+  display: list-item;
+}
+
+/ * Scripting
+   ================================================== ======================== * /
+
+/ **
+ * Adicione a exibição correta no IE 9.
+ * /
+
+lona {
+  display: inline-block;
+}
+
+/ **
+ * Adicione a exibição correta no IE.
+ * /
+
+template {
+  display: none;
+}
+
+/ * Escondido
+   ================================================== ======================== * /
+
+/ **
+ * Adicione a exibição correta no IE 10.
+ * /
+
+[Escondido] {
+  display: none;
+}
